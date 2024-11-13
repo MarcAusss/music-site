@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    color: white;
+}
+a{
+    color: white;
+}
+
+.home{
+    display: flex;
+}
+
+.main-nav,.playlist-for-sidenav,.Settings-nav{
+    margin: 30px 20px;
+}
+
+/* Left Navigation Bar */
+
+.left-navigation{
+    position: fixed;
+    height: 100vh;
+    color: white;
+    width: 15vw;
+    border-right: 1px solid #292929;
+    background: linear-gradient(160deg, #605f5f 0%, black 20%)
+}
+
+.left-navigation .logo{
+    width: 90px;
+    margin-top: 20px;
+}
+
+.left-navigation h4{
+    padding-left: 10px;
+    color: #a1a1a1;
+}
+
+.main-nav .fa{
+    font-size: 17px;
+    padding: 15px 30px 15px 0px;
+
+    color: white;
+}
+
+.main-nav a{
+    font-size: 15px;
+    color: #ccc;
+}
+
+.main-nav li:hover a,
+.Settings-nav li:hover a{
+    color: white;
+}
+
+
+/* playlist for Side Navigation */
+
+.playlist-for-sidenav li{
+    padding: 10px;
+}
+
+.playlist-for-sidenav li:hover{
+    background-color: #2b2b2b;
+    transition: .1s;
+}
+
+
+.playlist-for-sidenav img{
+    width: 40px;
+}
+
+.playlist-for-sidenav a{
+    text-align: center;
+    position: relative;
+    top: -10px;
+    left: 0px;
+    font-size: 15px;
+    color: #ccc;
+}
+
+/* Setting Navigation */
+
+
+.Settings-nav .fa{
+    font-size: 17px;
+    padding: 15px 30px 15px 0px;
+    color: white;
+}
+
+.Settings-nav a{
+    font-size: 15px;
+    color: #ccc;
+}
+
+/* end of Left Navigation */
+
+/* Body */
+
+.body{
+    margin-left: 15vw;
+    width: 64.5vw;
+    height: auto;
+    background: linear-gradient(0deg, #605f5f -160%, black 90%,  #605f5f 110%);
+    padding: 20px 40px;
+}
+
+/* Search Part */
+
+.search-portion{
+    display: flex;
+    margin: 20px 0px;
+    justify-content: space-between;
+}
+
+.search-box{
+    display: flex;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.search-box i{
+    color: #929292;
+    background-color: #4e4e4e;
+    padding: 16px;
+    border-radius: 0 30px 30px 0;
+    font-size: 20px;
+}
+
+.search-box input{
+    border-radius: 30px 0 0 30px;
+    width: 350px;
+    border: none;
+    padding-left: 20px;
+    background-color: #4e4e4e;
+    color: white;
+    outline: none;
+}
+
+.search-box input::placeholder{
+    color: #929292;
+    font-size: 19px;
+}
+
+.account-settings{
+    display: flex;
+    background-color: #292929;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
+    align-items: center;
+}
+
+.account-settings p, a{
+    margin: 0px 20px;
+}
+
+.account-settings img{
+    border-radius: 50%;
+    width: 30px;
+}
+
+/* End Of Search Part */
+
+/* Top songs Part */
+
+.Top-songs h2{
+    margin-bottom: 20px;
+}
+
+.Top-songs{
+    height: 30vh;
+}
+
+.images-for-top-songs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.images-for-top-songs img{
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.for-details{
+    background-color: #393939a1;
+    position: relative;
+    top: -82px;
+    height: 24%;
+    border-radius: 0px 0px 10px 10px;
+    width: 200px;
+    left: 4.5%;
+    padding: 20px;
+}
+
+.for-details h5{
+    font-size: 18px;
+}
+
+.for-details p{
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* End Top songs Part */
+
+
+
+
+
+
+/* Remix for Today Part */
+
+.Remix{
+    height: 55vh;
+}
+
+.Remix h2{
+    margin-bottom: 30px;
+}
+
+.for-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome{
+    width: 49%;
+}
+
+.welcome img{
+    width: 100%;
+    height: 45%;
+    border-radius: 20px;
+}
+
+.welcome h3{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.welcome p{
+    font-size: 15px;
+    color: #a7a7a7;
+    line-height: 20px;
+}
+
+.playlist-for-remix{
+    height: 44vh;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.playlist-for-remix .box-for-remix{
+    background-color: #292929;
+    height: 120px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.playlist-for-remix .box-for-remix i{
+    font-size: 30px;
+}
+
+.playlist-for-remix .box-for-remix img{
+    width: 80px;
+}
+
+.playlist-for-remix .box-for-remix .contex-of-music{
+    width: 50%;
+}
+
+.playlist-for-remix .box-for-remix .contex-of-music h4{
+    margin-bottom: 10px;
+}
+
+/* End Remix for Today Part */
+
+
+
+
+
+
+/* Recently Played Part */
+
+table, tr, td{
+    border: none;
+}
+
+table{
+    width: 100%;
+}
+td{
+    padding: 10px;
+}
+table tbody td{
+    height: 100px;
+}
+
+table tbody tr .image{
+    width: 140px;
+    text-align: center;
+}
+
+table tbody tr .image img{
+    width: 70px;
+}
+
+table tbody tr .title{
+    font-weight: 700;
+    width: 350px;
+}
+
+table tbody tr .singer{
+    width: 300px;
+}
+
+table tbody tr .duration{
+    text-align: center;
+}
+
+table tbody tr .action{
+    text-align: right;
+}
+
+table tbody tr .action span i{
+    background-color: #4e4e4e;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table tbody tr .action i{
+    padding-left: 20px;
+}
+
+/* End For Recently Played */
+
+
+
+
+
+
+/* Right Side Part */
+
+
+
+.right-side{
+    position: fixed;
+    right: 0;
+    width: 20vw;
+    background: linear-gradient(-160deg, #605f5f -10%, black 30%);
+    border-left: 1px solid #292929;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.right-settings{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-settings .fa-bell{
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 25px;
+    background-color: #2b2b2b;
+}
+
+.right-settings .theme{
+    background-color: #2b2b2b;
+    padding: 5px;
+    border-radius: 30px;
+
+}
+
+.fa-sun{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.right-settings .theme .fa-moon{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.favorite-part-right{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.favorite-part-right img{
+    width: 60px;
+    border-radius: 10px;
+}
+
+.favorite-part-right .contex-of-music{
+    width: 70%;    
+}
+
+.favorite-part-right .contex-of-music p{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.favorite-part-right .contex-of-music small{
+    font-size: 12px;
+    color: #929292;
+}
+
+.favorite-part-right .fa-ellipsis-vertical{
+    font-size: 20px;
+}
+
+.current-playing{
+    height: 100%;
+    background-color: #605f5f4a;
+    border-radius: 10px;
+    width: auto;
+    padding: 15px;
+}
+
+.current-playing img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.current-playing .song-descriptions{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+}
+
+.current-playing i{
+    font-size: 20px;
+}
+
+.song-duration-for-current{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px 20px;
+}
+
+.song-duration-for-current .duration-music{
+    display: flex;
+    justify-content: space-between;
+}
+
+.song-duration-for-current input{
+    width: 100%;
+    cursor: pointer;
+    height: 5px;
+}   
+
+.song-duration-for-current .bar{
+    background: rgb(105, 105, 170,.1);
+}
+
